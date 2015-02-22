@@ -6,7 +6,7 @@ print text
 text = 'The value of pi is %r' % pi
 print text
 #below comment will fail
-#text = 'The value of pi is ' + pi
+text = 'The value of pi is ' + pi
 text = 'The value of pi is ' + str(pi)
 print text
 

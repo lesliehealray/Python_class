@@ -16,7 +16,7 @@ EATS = {
 
 # defines the attributes of the object and their defaults
 class Animal(object):
-    def __init__(self, name, color='white', age=0, diet=None):    # Constructor of the class
+    def __init__(self, name, color, age=0, diet=):    # Constructor of the class
         self.name = name
         self.age = age
         self.color = color
@@ -24,7 +24,7 @@ class Animal(object):
 
     def feed(self, food):
         if food in EATS[self.diet]:
-            #{0} is a string format function. the numbers refer to the index
+            # {0} is a string format function. the numbers refer to the index
             print '{0} loved the {1}!!'.format(self.name, food)
         else:
             print '{0} does not eat {1} since it is a {2}.'.format(
@@ -35,7 +35,7 @@ class Animal(object):
 
 def __main__():
     animals = []
-    with open('/home/lhealray/Python_class/animals.csv', 'r') as f:
+    with open('/home/lhealray/python_class/animals.csv', 'r') as f:
         data = csv.DictReader(f)
         for row in data:
             obj = Animal(

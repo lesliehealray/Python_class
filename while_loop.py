@@ -1,4 +1,5 @@
-# loops
+import random
+
 
 count = 0
 
@@ -16,8 +17,8 @@ valid = ['y', 'n']
 while choice not in valid:
     choice = raw_input("Sorry, I didn't catch that. Enter again: ")
 
-answer = 23
-question = 'What number am i thinking of? '
+answer = random.randrange(0, 100)
+question = 'Pick a number between 1 and 100. >>'
 print "Let's play the guessing game!"
 
 while True:
@@ -28,3 +29,4 @@ while True:
         print ('Little lower')
     else:
         print 'you a mind reader!'.upper()
+        break

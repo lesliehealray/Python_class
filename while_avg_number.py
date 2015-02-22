@@ -5,9 +5,11 @@ count = int(raw_input('How many numbers would you like to sum:  '))
 current_count = 0
 
 while current_count < count:
+    current_count += 1
     print 'Number', current_count
     number = float(raw_input('Enter a number:  '))
     total += number
-    current_count += 1
+# current_count = current_count + 1
 
-print 'The average was: ', total/count
+
+print 'The average was: %r' % (total / count)

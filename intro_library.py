@@ -1,7 +1,6 @@
-from datetime import datetime    
-    
+from datetime import datetime
 print datetime.now()
-now = datetime.now()            
+now = datetime.now()
 current_year = now.year
 current_month = now.month
 current_day = now.day
